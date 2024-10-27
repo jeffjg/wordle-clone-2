@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+}
+
+#container {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#wordle-grid {
+  margin-bottom: 20px;
+}
+
+#wordle-grid .row {
+  display: flex;
+  justify-content: center;
+}
+
+#wordle-grid .row span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 2px 2px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#keyboard button {
+  background: white;
+  border: 1px solid rgb(53, 53, 53);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0;
+}
+
+#keyboard button:hover {
+  cursor: pointer;
+  background: #dddddd;
+}
+
+#keyboard .row {
+  margin: 5px;
+}
