@@ -8,20 +8,12 @@
     <title>Wordle Clone</title>
   </head>
   <body>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Wordle Clone</title>
-      </head>
-      <body>
         <div id="container">
           <h1>WORDLE</h1>
 
           <div id="wordle-grid">
             <!-- 6 Rows of 5 Boxes -->
-            <div id="row1" class="row">
+            <div id="row1" class="row active">
               <span></span>
               <span></span>
               <span></span>
@@ -92,7 +84,7 @@
             </div>
             <!-- Third Row -->
             <div class="row">
-              <button>ENTER</button>
+              <button id="enter">ENTER</button>
               <button>Z</button>
               <button>X</button>
               <button>C</button>
@@ -100,7 +92,7 @@
               <button>B</button>
               <button>N</button>
               <button>M</button>
-              <button>DEL</button>
+              <button id="del">DEL</button>
             </div>
           </div>
         </div>
