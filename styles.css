@@ -1,11 +1,17 @@
 body {
   font-family: sans-serif;
+  background: #1e1e1e;
+}
+
+h1 {
+  color: #a1a1a1;
 }
 
 #container {
   width: 800px;
   margin: 0 auto;
   text-align: center;
+  height: 95vh;
 }
 
 #wordle-grid {
@@ -19,27 +25,62 @@ body {
 
 #wordle-grid .row span {
   display: block;
+  font-weight: bold;
   width: 40px;
   height: 40px;
   margin: 2px 2px;
-  background: white;
   border-radius: 5px;
-  border: 1px solid black;
+  background: transparent;
+  border: 2px solid #4e4e4e;
+  opacity: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+#wordle-grid .row.active span {
+  background: #2c2c2c;
+  color: white;
+  border-color: #9b9b9b;
+  opacity: 1;
 }
 
 #keyboard button {
-  background: white;
-  border: 1px solid rgb(53, 53, 53);
+  background: #323232;
+  border: none;
   border-radius: 5px;
   padding: 10px;
   margin: 0;
+  min-width: 37px;
+  color: #a8a8a8;
 }
 
 #keyboard button:hover {
   cursor: pointer;
-  background: #dddddd;
+  background: #424242;
 }
 
 #keyboard .row {
   margin: 5px;
+}
+
+#wordle-grid .row span.correct-letter-and-position,
+#keyboard button.correct-letter-and-position {
+  background: #0d780d;
+  border-color: #4ea74e;
+  color: #ebffeb;
+}
+#wordle-grid .row span.incorrect-position,
+#keyboard button.incorrect-position {
+  background: #a97c06;
+  border-color: #e6b638;
+  color: #fff7e3;
+}
+#wordle-grid .row span.incorrect-letter,
+#keyboard button.incorrect-letter {
+  background: #111111;
+  color: #434343;
+  border-color: #2d2d2d;
+  font-weight: 700;
 }
